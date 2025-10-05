@@ -175,3 +175,15 @@ a:hover {
 .contact-list a:focus-visible {
   box-shadow: 0 0 0 3px color-mix(in oklab, #38bdf8 40%, transparent);
 }
+
+.mini-btn {
+  justify-self: start;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.mini-btn:hover { outline: 2px solid color-mix(in oklab, #38bdf8 35%, transparent); }
