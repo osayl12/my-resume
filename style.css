@@ -55,3 +55,50 @@ a:hover { text-decoration: underline; }
   section { border: 1px solid #ccc; background: white; color: black; }
   a { color: black; text-decoration: none; }
 }
+
+.project {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.project + .project {
+  margin-top: 20px;
+}
+
+h3 {
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  background: color-mix(in oklab, var(--text) 12%, var(--card));
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: transform 0.15s;
+}
+
+.skills-list li:hover {
+  transform: scale(1.07);
+}
