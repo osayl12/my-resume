@@ -1,0 +1,57 @@
+:root {
+  --bg: #0b1220;
+  --text: #e2e8f0;
+  --card: #0f172a;
+  --border: #1e293b;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  background: #0b1220cc;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(6px);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 14px 0;
+}
+
+/* Light theme variables */
+:root.light {
+  --bg: #f8fafc;
+  --text: #0f172a;
+  --card: #ffffff;
+  --border: #e2e8f0;
+}
+
+/* Links + project visual tweaks (אופציונלי אבל נחמד) */
+a { color: #38bdf8; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* הדפסה ל-PDF (בסיסי) */
+@media print {
+  header { position: static; backdrop-filter: none; background: white; color: black; border: none; }
+  body { background: white; color: black; }
+  section { border: 1px solid #ccc; background: white; color: black; }
+  a { color: black; text-decoration: none; }
+}
