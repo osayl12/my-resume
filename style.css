@@ -206,3 +206,18 @@ a:hover {
 .thumb:hover img {
   transform: scale(1.03);  /* זום עדין על ריחוף */
 }
+
+/*  Nav Styling */ 
+html { scroll-behavior: smooth; scroll-padding-top: 70px; } /* גובה ההדר בקירוב */
+
+.site-nav { display: flex; gap: 12px; align-items: center; }
+.site-nav a {
+  color: #cbd5e1; text-decoration: none;
+  padding: 6px 10px; border-radius: 999px;
+}
+.site-nav a:hover { background: rgba(255,255,255,.06); }
+.site-nav a.active { background: #38bdf8; color: #0b1220; font-weight: 700; }
+
+/* קצת מרווח בין המותג לניווט */
+.toolbar { gap: 16px; }
+
