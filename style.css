@@ -221,4 +221,5 @@ html { scroll-behavior: smooth; scroll-padding-top: 70px; } /* גובה ההדר
 /* קצת מרווח בין המותג לניווט */
 .toolbar { gap: 16px; }
 
-/* skip link to connect*/ 
+.bullets { margin: 10px 0 0; padding-left: 18px; }
+
