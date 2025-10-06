@@ -44,17 +44,11 @@ section {
   --border: #e2e8f0;
 }
 
-/* Links + project visual tweaks (אופציונלי אבל נחמד) */
+/* Links + project visual tweaks */
 a { color: #38bdf8; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/* הדפסה ל-PDF (בסיסי) */
-@media print {
-  header { position: static; backdrop-filter: none; background: white; color: black; border: none; }
-  body { background: white; color: black; }
-  section { border: 1px solid #ccc; background: white; color: black; }
-  a { color: black; text-decoration: none; }
-}
+
 
 .project {
   border-top: 1px solid var(--border);
@@ -160,7 +154,7 @@ a:hover {
   opacity: 0.9;
 }
 
-/* קישורים יפים ונגישים */
+/* contact*/
 .contact-list a {
   color: #38bdf8;
   text-decoration: none;
@@ -218,7 +212,6 @@ html { scroll-behavior: smooth; scroll-padding-top: 70px; } /* גובה ההדר
 .site-nav a:hover { background: rgba(255,255,255,.06); }
 .site-nav a.active { background: #38bdf8; color: #0b1220; font-weight: 700; }
 
-/* קצת מרווח בין המותג לניווט */
 .toolbar { gap: 16px; }
 
 .bullets { margin: 10px 0 0; padding-left: 18px; }
